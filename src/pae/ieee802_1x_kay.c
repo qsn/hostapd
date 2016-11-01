@@ -3127,6 +3127,7 @@ ieee802_1x_kay_init(struct ieee802_1x_kay_ctx *ctx, enum macsec_policy policy,
 
 		kay->macsec_desired = TRUE;
 		kay->macsec_protect = TRUE;
+		kay->macsec_encrypt = policy == SHOULD_ENCRYPT;
 		kay->macsec_validate = Strict;
 		kay->macsec_replay_protect = FALSE;
 		kay->macsec_replay_window = 0;
