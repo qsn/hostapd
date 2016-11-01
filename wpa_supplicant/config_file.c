@@ -773,6 +773,7 @@ static void wpa_config_write_network(FILE *f, struct wpa_ssid *ssid)
 #ifdef CONFIG_MACSEC
 	INT(macsec_policy);
 	INT(macsec_integ_only);
+	INT(macsec_port);
 #endif /* CONFIG_MACSEC */
 #ifdef CONFIG_HS20
 	INT(update_identifier);
